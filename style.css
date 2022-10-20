@@ -44,7 +44,7 @@ body{
 *************************** */
 
 .section {
-    padding: 8rem 0;
+    padding: 15rem 0;
 }
 
 .grid {
@@ -66,7 +66,9 @@ body{
 .container {
     max-width: 110rem;
     margin: 0 auto;
+    padding-top: 6rem;
 }
+
 
 h1 {
     font-size: 6rem;
@@ -75,7 +77,6 @@ h1 {
     font-weight: 700;
     margin-top: 0.6rem;
     font-family: 'Roboto Slab', serif;
-    
     text-transform: capitalize;
 }
 
@@ -85,7 +86,7 @@ p {
     font-weight: 500;
     color: var(--para-color);
     line-height: 1.9rem;
-    width: 60rem;
+    width: 50rem;
     text-transform: capitalize;
 }
 
@@ -124,6 +125,7 @@ p {
     margin-bottom: 5rem;
     text-align: center;
 }
+
 h4{
     font-size: 2rem;
     font-weight: 500;
@@ -186,7 +188,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    height: 6rem;
+    height: 7rem;
     background-color: #fff;
     padding: 0 3.7rem;
     display: flex;
@@ -225,21 +227,21 @@ nav ul {
 *************************** */
 
 .hero-section {
-    background: var(--hero-bg-color);
-    padding-top: 12rem;
+    background: #fff;
     box-shadow: var(--Section-shadow);
 }
 
-
-.hero-right-data {
+.hero-left-data{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .hero-left-data p:first-child{
     color: var(--orange-color);
-    margin-left: 1.6rem;
+    /* text-align: start; */
+    /* margin-left: 4rem; */
     font-weight: 600;
 }
 .hero-left-data p span{
@@ -252,8 +254,7 @@ nav ul {
     color: var(--heading-color);
     text-transform: uppercase;
     margin: 2rem 0;
-    margin-left: 8rem;
-    
+    margin-left: 8rem;   
 }
 
 .hero-left-data .dynamic-letter{
@@ -261,10 +262,10 @@ nav ul {
 }
 
 .hero-right-data img {
-    width: 90%;
+    width: 44rem;
     transition: all 0.3s linear;
     animation: updown 7s infinite;
-    margin-right: 6rem;  
+    /* margin-right: 6rem;   */
 }
 
 @keyframes updown {
@@ -306,15 +307,16 @@ nav ul {
     background: var(--main-bg-color);
     position: relative;
     width: 100%;
+    padding: 0rem 0;
 }
 .about-left-data{
-    margin-top: 4rem;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-left-data img{
-    width: 40%;
-    margin: 2rem;
+    width: 20rem;   
 }
 .about-section .bio-data-stats h3{
     font-size: 1.3rem;
@@ -418,20 +420,14 @@ nav ul {
 }
 
 .service{
-    width: 25rem;
-    border: 2px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 0;
+    padding: 2rem 0.4rem;
     box-shadow: var(--Shadow);
-    border-top-left-radius: 3rem;
-    border-bottom-left-radius: 3rem;
-    border-bottom-right-radius: 3rem;
+    background: var(--heading-color);
+    text-align: center;
 }
 .service p{
-    width: 20rem;
+    width: 28rem;
+    color: var(--header-color);  
 }
 
 .service .icon{
@@ -444,39 +440,29 @@ nav ul {
    portfolio Section Start
 *************************** */
 
-.portfolio-section{
+ .portfolio-section{
     background: var(--main-bg-color);
-    padding-bottom: 10rem;
 }
-.portfolio-section .container{
-    max-width: 90rem;
-    margin: 0 auto;
-}
+
 .portfolio-section h4{
     text-align: center;
 }
 .portfolio-section h3{
     text-transform: uppercase;
 }
-.data{
-    width: 30rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+.data{
     background: var(--header-color);
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    padding: 2rem 3rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    text-align: center;
 }
 .data img{
-    width: 100%; 
-    transition: all 0.4s linear;  
+    width: 80%; 
+    text-align: center;
 }
-.data:hover{
-    transform: translateY(-1rem);
-}
-
+ 
+ 
 /* 
 ****************************
    Contactus Section Start
@@ -522,8 +508,6 @@ nav ul {
 
 .footer-section{
     background: var(--heading-color);
-    /* height: 35rem; */
-    position: relative;
 }
 .footer-section p{
     color: var(--footer-para-color);
@@ -532,51 +516,24 @@ nav ul {
 .footer-section a{
     color: var(--footer-para-color);
 }
-.A-data p{
-    width: 50rem;
+ .A-data p{
+    width: 40rem;
     text-align: start;
-}
+    line-height: 2rem;
+    padding: 0.7rem 0;
+    margin-left: 2rem;
+} 
 
-.b-data{
-    text-align: center;
-    width: 18rem;
-}
-.b-data li{
-    margin-bottom: 0.5rem;
-}
-
-.c-data{
-    text-align: start;
-
-}
-.c-data address{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--para-color);
-    gap: 1rem;
-    margin-left: 10rem;
-}
-.c-data .second-heading{
-      margin-right: 25rem;
-}
-
-.f-icon{
-    margin-right: 1rem;
-}
-
-.A-data .icons-data{
+ .A-data .icons-data{
     margin-top: 2rem;
-    text-align: center;
-    display: flex;
+    display: flex; 
     gap: 1.7rem;
     justify-content: center;
-    align-items: center;
 }
 .A-data .icons-data .icon{
-    color: var(--header-color);
-    
+    color: var(--header-color); 
 }
+
 
 .f-last{
     width: 100%;
@@ -608,24 +565,48 @@ nav ul {
    responsive Section Start
 *************************** */
 
-@media (max-width:46em){
+
+/* max-width 1200 px  */
+
+@media(max-width:75em){
+
+    .container {
+        max-width: 95rem;
+    }
+    .grid {
+        gap: 3rem;
+    }
+    .service-section .grid{
+        gap: 2rem;
+    }
+    .footer-section .grid{   
+        gap: 5rem;
+    }
+    
+}
+
+/* max-width 980px */
+
+@media (max-width:61em){
     html{
         font-size: 55%;
     }
 
     header{
         position: fixed;
+        height: 8rem;
     }
    
     .mobile-navbar-btn{
         display: block;
         z-index: 999;
-        border: 3px solid var(--heading-color);
-        padding: 0.3rem 0.4rem;
+        border: 1px solid rgb(45, 39, 39);
+        padding: 0.3rem 0.6rem;
+        font-size: 3rem;
     }
     .mobile-nav-icon:nth-child(2){
         padding: 0.1rem 0.2rem;
-        font-size: 2.6rem;
+        font-size: 2.9rem;
     }
 
     nav{
@@ -670,11 +651,98 @@ nav ul {
     .active .mobile-navbar-btn .mobile-nav-icon:nth-child(1){
         display: none;
     }
+
+    html{
+        font-size: 54%
+    }
+
+    .container{
+        max-width: 80rem;
+    }
+    .grid{
+        gap:1rem
+    }
+
+    .hero-right-data img{
+        width: 30rem;
+    }
     
 }
 
+/* max-width 750px */
 
-@media (max-width:35em){
+@media(max-width:46em){
+
+     .container{
+        max-width: 55rem;
+     } 
+
+     .grid{
+        gap: 6rem;
+     }
+     .grid-two-column{
+        grid-template-columns: 1fr;
+     }
+
+     .grid-three-column{
+        grid-template-columns: 1fr 1fr;
+     }
+
+     .hero-right-data{
+        text-align: center;
+     }
+     .hero-right-data img {
+        width: 40rem;
+        margin-right: 0rem;  
+    }
+
+    header .logo {
+        width: 22rem;
+    }
+}
+
+/* max-width 560px */
+
+@media(max-width:35em){
+
+    html{ font-size: 49%; }
+
+    .container{ max-width: 48rem; }
+
+    .grid { gap: 2rem; }
+
+    .grid-three-column{ grid-template-columns: 1fr; }
+
+    .service{ padding: 2rem 3rem; }
+
+    .service p{
+        width: 39rem;
+        color: var(--header-color);  
+    }
+    .A-data,h4{ text-align: center; }
+
+    .A-data ul li{ padding: 0.8rem 0; }  
+}
+
+/* max-width 420px */
+
+@media(max-width:26.25em){
+
+    html{ font-size: 44%; }
+
+    .container{ max-width: 46rem; }
+
+    .about-section .common-para{ width: 45rem; }
+
+    .common-input{ width: 54rem; }
+}
+
+@media (max-width:23.375em){
+     
+    .common-input{ width: 46rem; }
+}
+
+/* @media (max-width:35em){
     
     h4{margin-top: 1rem; }
 
@@ -691,7 +759,7 @@ nav ul {
 
     /* hero section start */
 
-    .hero-left-data h2{ 
+    /* .hero-left-data h2{ 
         font-size: 1.3rem; 
         margin: 1rem 0;
         margin-left: 6rem; 
@@ -704,10 +772,10 @@ nav ul {
 
     /* about us section start */
     
-    .about-left-data img{
+    /* .about-left-data img{
         width: 40%;
-        position: relative;
-        left: 13rem;
+        position: relative; */ 
+        /* left: 13rem;
     }
 
     
@@ -715,17 +783,17 @@ nav ul {
 
     /* service section start */
 
-    .service{ width: 40rem;}
+    /* .service{ width: 40rem;}
 
     .service p{
         width: 35rem;
         text-align: center;
 
-    }
+    } */ 
 
      /* portfolio section start */
 
-      .portfolio-section .common-heading{
+      /* .portfolio-section .common-heading{
         padding-bottom: 0rem;
       }
 
@@ -736,11 +804,11 @@ nav ul {
 
       .portfolio-section .data img{
         width: 100%;
-      }
+      } */
 
       /* footer section start */
 
-      .A-data .common-para{
+      /* .A-data .common-para{
         width: 40rem;
         text-align: center;
         font-size: 1.2rem;
@@ -757,8 +825,8 @@ nav ul {
 @media (max-width:25em){
 
     .container{ max-width: 35rem;}
-    h4{ font-size: 1.6rem; }
-    .common-heading{ font-size: 2.5rem; }
+    h4{ font-size: 1.6rem; } */
+    /* .common-heading{ font-size: 2.5rem; }
 
     header .logo { width: 45%; }
 
@@ -785,8 +853,8 @@ nav ul {
     .portfolio-section .data{
         width: 26rem;
         margin: 0 -2.5rem;   
-      }
-      
+        */
+/*       
       .common-input{
         width: 35rem;
       }
@@ -801,5 +869,5 @@ nav ul {
    }
 
    .A-data h4{ margin-left: 8rem; }
-}
-
+} */
+ 
